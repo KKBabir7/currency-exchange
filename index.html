@@ -1,0 +1,148 @@
+<html>
+       <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	          Sendbit
+	        </title>
+			           <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/style.css">
+						<link rel="stylesheet" href="css/select/bootstrap-select.css">
+						<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+                         
+					    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+                        
+	     <style>
+	
+
+	    
+        .usd {
+		background-image:url(img/select-img/usd.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+		.btc {
+		background-image:url(img/select-img/btc.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+        .ltc {
+		background-image:url(img/select-img/ltc.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+         .dash {
+		background-image:url(img/select-img/dash.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+        .bch {
+		background-image:url(img/select-img/bch.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+        
+	
+
+  </style>               
+	</head>
+	
+	<body onchange="init()">
+
+
+   <!---------------------main menu or section-1 --> 
+		<section class="main-heading section-1">
+		    <div class="container">
+			    <div class="row">
+					<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 right-side" style="margin-top: 30px">
+						<div class="jumbotron"> 
+							<button type="button" class="btn btn-primary cl-l cl">Buy<sup style="font-size:15px;font-weight:1000;"><i>&nbsp;SEPA</i></sup></button><button type="button" class="btn btn-primary cl cl-r">Swap</button>
+							<br><br><br>
+							<div class="input-group toper t-1" >
+								  <input type="text" onkeyup="eurf()" id="eurf" class="form-control input-0" autocomplete="off" placeholder="0.00" maxlength="20">
+								 
+								  <span class="send">EXCHANGE</span>
+								  <span class="input-group-btn b-1">
+									<button class="btn btn-default" type="button"><img style="margin-top:-4px;" width="30px;" src="img/select-img/Euro-Symbol-PNG-HD.png"> EUR</button>
+								  </span>
+							</div>
+							<ul class="currency-dp">
+								<li class="minus"><i class="fa fa-minus"></i></li>
+								<li class="countt">$2.08</li>
+								<li class="next-dp">
+								<div class=" dp">
+									  <button  class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										Fixed miner fee
+										&nbsp;<span class="glyphicon glyphicon-exclamation-sign"aria-hidden="true"></span>
+									  </button>
+									  
+									</div>
+								</li>
+								
+							</ul>
+							<ul class="currency-dp2">
+								<li class="closee"><i class="fa fa-close"></i></li>
+								<li class="countt">Convert your EUR balance to crypto instantly</li>				
+								
+							</ul>
+							<div class="input-group down t-2">
+								  <input type="text" onkeyup="allcurf()" id="allcurf" class="form-control input-1" autocomplete="off" placeholder="0.0000" maxlength="20">
+								   <i class='fas fa-unlock-alt' style='font-size:24px'></i>
+								  <span class="send">RECEIVE</span>
+								  <span class="input-group-btn b-2">
+									<select class="selectpicker"  onchange="allcurfc()"  id="allcurfc">
+										
+										<option value="BTC" data-icon="btc">&nbsp;BTC</option>
+										<option value="LTC" data-icon="ltc">&nbsp;LTC</option>
+										<option value="DASH" data-icon="dash" >&nbsp;DASH</option>
+										<option value="BCH" data-icon="bch">&nbsp;BCH</option>
+									</select>
+								  </span>
+							</div>
+							<div class="row button-gu" >
+								<div class="col-md-12  col-sm-12 ">
+									<a href="#" type="button" class="btn btn-primary  left btn-lg btn-block">
+									Sign-in to buy with <i style="font-size:20px;font-weight:bold">SEPA</i></a>
+								</div>
+							</div>
+						</div>   
+				    </div>
+				</div>
+		    </div>
+		</section>
+		<BR><BR>
+
+
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			 
+			   <script src="js/bootstrap.min.js"></script>
+			   <script src="js/extranal.js"></script>
+			    <script src="js/dist/js/bootstrap-select.js"></script>
+			    
+
+	</body>
+</html>
